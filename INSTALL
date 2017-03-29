@@ -1,0 +1,17 @@
+Installation Instructions
+*************************
+
+To compile and install, just type:
+
+./configure --prefix=$HOME
+make
+make install
+
+In this case, plugin will be installed in $HOME/.purple/plugins.
+
+
+If you want to install plugin in /usr/lib/pidgin directory, type:
+
+./configure --prefix=/usr
+make
+sudo make install
