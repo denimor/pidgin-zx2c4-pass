@@ -26,7 +26,7 @@ zx2c4_pass_cmdline(const PurpleAccount* account, const gchar* command) {
 	gchar* cmd = g_strdup_printf("%s %s %s/%s/%s",
 		purple_prefs_get_string("/plugins/core/zx2c4_pass/script"),
 		command,
-		purple_prefs_get_string("/plugins/core/zx2c_4pass/path"),
+		purple_prefs_get_string("/plugins/core/zx2c4_pass/path"),
 		purple_account_get_protocol_id(account),
 		username
 	);
@@ -142,13 +142,13 @@ get_pref_frame(PurplePlugin* plugin) {
 	PurplePluginPrefFrame* frame = purple_plugin_pref_frame_new();
 	purple_plugin_pref_frame_add(frame,
 		purple_plugin_pref_new_with_name_and_label(
-			"/plugins/core/zx2c4-pass/script",
+			"/plugins/core/zx2c4_pass/script",
 			"Pass script"
 		)
 	);
 	purple_plugin_pref_frame_add(frame,
 		purple_plugin_pref_new_with_name_and_label(
-			"/plugins/core/zx2c4-pass/path",
+			"/plugins/core/zx2c4_pass/path",
 			"Password storage directory"
 		)
 	);
